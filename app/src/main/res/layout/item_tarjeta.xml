@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="2dp">
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="12dp">
+    <TextView android:id="@+id/tvBanco" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textStyle="bold" android:textSize="16sp" android:text="Banco"/>
+    <TextView android:id="@+id/tvAlias" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Alias"/>
+    <TextView android:id="@+id/tvLimite" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Límite:"/>
+    <TextView android:id="@+id/tvDeuda" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Deuda:"/>
+    <TextView android:id="@+id/tvDisponible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Disponible:"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+        <TextView android:id="@+id/tvCorte" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Corte:"/>
+        <TextView android:id="@+id/tvVence" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Vence:"/>
+    </LinearLayout>
+    <ProgressBar android:id="@+id/pbUso" style="@android:style/Widget.ProgressBar.Horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:progress="0"/>
+</LinearLayout>
+</androidx.cardview.widget.CardView>

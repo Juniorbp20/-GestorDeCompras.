@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Gestión de Compras</string>
+    <string name="clientes">Clientes</string>
+    <string name="pr_ximos_pedidos">Próximos pedidos</string>
+    <string name="total_pendiente">Total Pendiente</string>
+    <string name="ganancia_esperada">Ganancia Esperada</string>
+    <string name="pedidos_hoy">Pedidos Hoy</string>
+    <string name="clientes_activos">Clientes Activos</string>
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary_color">#2196F3</color>
+    <color name="primary_dark">#1976D2</color>
+    <color name="primary_light">#BBDEFB</color>
+    <color name="success_color">#4CAF50</color>
+    <color name="warning_color">#FF9800</color>
+    <color name="error_color">#F44336</color>
+    <color name="info_color">#00BCD4</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray">#757575</color>
+    <color name="gray_light">#BDBDBD</color>
+    <color name="gray_dark">#424242</color>
+    <color name="background_light">#FAFAFA</color>
+    <color name="background_card">#FFFFFF</color>
+    <color name="ic_launcher_background">#AC0903</color>
+</resources>

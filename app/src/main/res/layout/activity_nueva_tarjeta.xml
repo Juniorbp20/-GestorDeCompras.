@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:padding="16dp">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+        <EditText android:id="@+id/etBanco" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Banco"
+            tools:ignore="Autofill,HardcodedText,TextFields" />
+        <EditText android:id="@+id/etAlias" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Alias (opcional)"
+            tools:ignore="Autofill,HardcodedText,TextFields" />
+        <EditText android:id="@+id/etLimite" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Límite RD$" android:inputType="numberDecimal"
+            tools:ignore="Autofill,HardcodedText" />
+        <EditText android:id="@+id/etCorte" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Día de corte (1-31)" android:inputType="number"
+            tools:ignore="Autofill,HardcodedText" />
+        <EditText android:id="@+id/etVence" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Día de vencimiento (1-31)" android:inputType="number"
+            tools:ignore="Autofill,HardcodedText" />
+        <EditText android:id="@+id/etNotas" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Notas (opcional)"
+            tools:ignore="Autofill,HardcodedText,TextFields" />
+        <Button android:id="@+id/btnGuardarTarjeta" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Guardar" android:layout_marginTop="16dp"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+</ScrollView>
