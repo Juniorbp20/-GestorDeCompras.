@@ -13,8 +13,6 @@ import com.example.gestiondecompras.R;
 import com.example.gestiondecompras.models.Tarjeta;
 
 import java.util.List;
-import java.util.Locale;
-
 public class TarjetasAdapter extends RecyclerView.Adapter<TarjetasAdapter.TarjetaViewHolder> {
 
     public interface OnTarjetaClickListener {
@@ -68,16 +66,19 @@ public class TarjetasAdapter extends RecyclerView.Adapter<TarjetasAdapter.Tarjet
             pbUso = itemView.findViewById(R.id.pbUso);
         }
         void bind(Tarjeta t) {
+            android.content.Context context = itemView.getContext();
             tvBanco.setText(t.getBanco());
             tvAlias.setText(t.getAlias());
-            tvLimite.setText(String.format(Locale.getDefault(), "Límite: RD$ %,.2f", t.getLimiteCredito()));
-            tvDeuda.setText(String.format(Locale.getDefault(), "Deuda: RD$ %,.2f", t.getDeudaActual()));
+            tvLimite.setText(context.getString(R.string.tarjeta_limite_format, t.getLimiteCredito()));
+            tvDeuda.setText(context.getString(R.string.tarjeta_deuda_format, t.getDeudaActual()));
             double disponible = Math.max(0, t.getLimiteCredito() - t.getDeudaActual());
-            tvDisponible.setText(String.format(Locale.getDefault(), "Disponible: RD$ %,.2f", disponible));
-            tvCorte.setText("Corte: " + t.getDiaCorte());
-            tvVence.setText("Vence: " + t.getDiaVencimiento());
+            tvDisponible.setText(context.getString(R.string.tarjeta_disponible_format, disponible));
+            tvCorte.setText(context.getString(R.string.tarjeta_corte_format, t.getDiaCorte()));
+            tvVence.setText(context.getString(R.string.tarjeta_vence_format, t.getDiaVencimiento()));
             int progress = 0;
-            if (t.getLimiteCredito() > 0) progress = (int) Math.min(100, Math.round((t.getDeudaActual() / t.getLimiteCredito()) * 100));
+            if (t.getLimiteCredito() > 0) {
+                progress = (int) Math.min(100, Math.round((t.getDeudaActual() / t.getLimiteCredito()) * 100));
+            }
             pbUso.setProgress(progress);
         }
     }

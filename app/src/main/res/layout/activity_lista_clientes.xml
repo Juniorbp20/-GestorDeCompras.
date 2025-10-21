@@ -14,7 +14,7 @@
         android:layout_marginTop="12dp"
         android:background="@drawable/bg_toolbar_main"
         android:elevation="4dp"
-        android:title="@string/pedidos_title"
+        android:title="@string/clientes_title"
         app:titleCentered="true"
         app:titleTextColor="@color/white"
         app:navigationIcon="@drawable/ic_arrow_back" />
@@ -43,91 +43,65 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/pedidos_filter_title"
+                    android:text="@string/clientes_filter_title"
                     android:textColor="@color/gray_dark"
                     android:textSize="14sp"
                     android:textStyle="bold" />
 
-                <LinearLayout
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.Material3.TextInputLayout.FilledBox.Dense"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal">
+                    android:hint="@string/clientes_search_hint">
 
-                    <com.google.android.material.textfield.TextInputLayout
-                        style="@style/Widget.Material3.TextInputLayout.FilledBox.Dense"
-                        android:layout_width="0dp"
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etBuscar"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginEnd="12dp"
-                        android:layout_weight="1"
-                        android:hint="@string/pedidos_search_hint">
-
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/etBuscar"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:imeOptions="actionSearch"
-                            android:inputType="text"
-                            tools:text="Ana" />
-                    </com.google.android.material.textfield.TextInputLayout>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/pedidos_filter_status"
-                        android:textColor="@color/gray_dark"
-                        android:textSize="12sp"
-                        android:textStyle="bold" />
-                </LinearLayout>
+                        android:imeOptions="actionSearch"
+                        android:inputType="text"
+                        tools:text="Juan" />
+                </com.google.android.material.textfield.TextInputLayout>
 
                 <Spinner
-                    android:id="@+id/spinnerFiltroEstado"
+                    android:id="@+id/spinnerFiltro"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginTop="12dp"
                     android:padding="4dp" />
-
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rvPedidos"
+            android:id="@+id/rvClientes"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
             android:clipToPadding="false"
             android:paddingBottom="16dp"
-            tools:listitem="@layout/item_pedido" />
+            tools:listitem="@layout/item_cliente" />
 
-        <LinearLayout
+        <TextView
+            android:id="@+id/tvVacio"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:orientation="vertical"
-            android:padding="16dp">
-
-            <TextView
-                android:id="@+id/tvVacio"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="@string/pedidos_empty"
-                android:textColor="@color/gray_dark"
-                android:textSize="14sp"
-                android:visibility="gone"
-                tools:visibility="visible" />
-        </LinearLayout>
+            android:text="@string/clientes_empty"
+            android:textColor="@color/gray_dark"
+            android:textSize="14sp"
+            android:visibility="gone"
+            tools:visibility="visible" />
 
     </LinearLayout>
 
-    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
-        android:id="@+id/fabNuevoPedido"
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabNuevo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_margin="24dp"
-        android:text="@string/nuevo_pedido"
-        app:icon="@drawable/ic_add_circle" />
+        android:contentDescription="@string/clientes_nuevo"
+        app:srcCompat="@drawable/ic_add_circle" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

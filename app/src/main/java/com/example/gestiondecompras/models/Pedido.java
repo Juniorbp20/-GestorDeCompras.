@@ -15,6 +15,8 @@ public class Pedido implements Serializable {
     private Date fechaCreacion;
     private String estado; // PENDIENTE, ENTREGADO, PAGADO, CANCELADO
     private String notas;
+    private Integer tarjetaId;
+    private String tarjetaAlias;
 
 
     public static final String ESTADO_PENDIENTE = "PENDIENTE";
@@ -23,7 +25,12 @@ public class Pedido implements Serializable {
     public static final String ESTADO_CANCELADO = "CANCELADO";
 
 
-    public Pedido() { this.fechaCreacion = new Date(); this.estado = ESTADO_PENDIENTE; }
+    public Pedido() {
+        this.fechaCreacion = new Date();
+        this.estado = ESTADO_PENDIENTE;
+        this.tarjetaId = null;
+        this.tarjetaAlias = null;
+    }
     public Pedido(int clienteId, String clienteNombre, String tienda, double montoCompra, double ganancia, Date fechaEntrega) {
         this();
         this.clienteId = clienteId;
@@ -62,6 +69,10 @@ public class Pedido implements Serializable {
     public void setEstado(String estado) { this.estado = estado; }
     public String getNotas() { return notas; }
     public void setNotas(String notas) { this.notas = notas; }
+    public Integer getTarjetaId() { return tarjetaId; }
+    public void setTarjetaId(Integer tarjetaId) { this.tarjetaId = tarjetaId; }
+    public String getTarjetaAlias() { return tarjetaAlias; }
+    public void setTarjetaAlias(String tarjetaAlias) { this.tarjetaAlias = tarjetaAlias; }
 
 
     private void calcularTotalGeneral() { this.totalGeneral = this.montoCompra + this.ganancia; }

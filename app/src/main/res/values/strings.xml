@@ -1,10 +1,122 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
+﻿<resources>
     <string name="app_name">Gestión de Compras</string>
+
+    <!-- Dashboard labels -->
+    <string name="dashboard_title">Panel principal</string>
+    <string name="dashboard_subtitle">Resumen del dia</string>
+    <string name="dashboard_greeting_placeholder">Hola!</string>
+    <string name="dashboard_greeting_format">%1$s!</string>
+    <string name="dashboard_greeting_morning">Buenos dias</string>
+    <string name="dashboard_greeting_afternoon">Buenas tardes</string>
+    <string name="dashboard_greeting_evening">Buenas noches</string>
+    <string name="dashboard_trend_placeholder">Sin cambios desde tu ultima visita</string>
+    <string name="dashboard_trend_up">Subio RD$ %1$,.2f vs. tu ultima visita</string>
+    <string name="dashboard_trend_down">Bajo RD$ %1$,.2f vs. tu ultima visita</string>
+    <string name="dashboard_trend_neutral">Sin cambios desde tu ultima visita</string>
+    <string name="dashboard_pending_collections">Pedidos atrasados</string>
+    <string name="dashboard_reports">Reportes</string>
+    <string name="dashboard_reports_toast">Seccion de reportes proximamente.</string>
+    <string name="dashboard_next_orders_subtitle">Organiza tus entregas para los proximos dias.</string>
+    <string name="label_tarjeta">Tarjeta</string>
+    <string name="tarjeta_sin_asignar">Sin tarjeta asignada</string>
+    <string name="error_sin_clientes">Registra un cliente antes de crear un pedido.</string>
+
+    <!-- Totals -->
+    <string name="total_pendiente">Total pendiente</string>
+    <string name="ganancia_esperada">Ganancia esperada</string>
+    <string name="pedidos_hoy">Pedidos hoy</string>
+    <string name="clientes_activos">Clientes activos</string>
+
+    <!-- Acciones -->
+    <string name="acciones_rapidas">Acciones rapidas</string>
+    <string name="nuevo_pedido">Nuevo pedido</string>
+    <string name="ver_pedidos">Ver pedidos</string>
+    <string name="calendario">Calendario</string>
     <string name="clientes">Clientes</string>
-    <string name="pr_ximos_pedidos">Próximos pedidos</string>
-    <string name="total_pendiente">Total Pendiente</string>
-    <string name="ganancia_esperada">Ganancia Esperada</string>
-    <string name="pedidos_hoy">Pedidos Hoy</string>
-    <string name="clientes_activos">Clientes Activos</string>
+
+    <!-- Lista -->
+    <string name="proximos_pedidos">Proximos pedidos</string>
+    <string name="no_hay_pedidos_proximos">No hay pedidos proximos</string>
+
+    <!-- Pedidos -->
+    <string name="pedidos_title">Pedidos</string>
+    <string name="pedidos_title_cliente">Pedidos de %1$s</string>
+    <string name="pedidos_filter_title">Filtrar pedidos</string>
+    <string name="pedidos_search_hint">Buscar cliente o tienda</string>
+    <string name="pedidos_filter_status">Estado</string>
+    <string name="pedidos_empty">No se encontraron pedidos con los filtros seleccionados.</string>
+    <string name="pedidos_estado_actualizado">Estado actualizado a %1$s</string>
+    <string name="pedidos_estado_error">No se pudo actualizar el estado</string>
+
+    <!-- Clientes -->
+    <string name="clientes_title">Clientes</string>
+    <string name="clientes_filter_title">Encuentra a tus clientes</string>
+    <string name="clientes_search_hint">Buscar por nombre, telefono o email</string>
+    <string name="clientes_empty">Aun no registras clientes.</string>
+    <string name="clientes_nuevo">Nuevo cliente</string>
+
+    <!-- Calendario -->
+    <string name="calendario_title">Calendario</string>
+
+    <!-- Tarjetas -->
+    <string name="tarjetas_title">Tarjetas</string>
+    <string name="tarjetas_subtitle">Administra las tarjetas disponibles para las compras.</string>
+    <string name="tarjetas_empty">Aun no tienes tarjetas guardadas.</string>
+    <string name="tarjetas_nueva">Nueva tarjeta</string>
+
+    <!-- Reportes -->
+    <string name="reportes_title">Reportes</string>
+    <string name="reportes_subtitle">Resumen financiero de tu negocio.</string>
+    <string name="reportes_total_cobrado">Total cobrado</string>
+    <string name="reportes_total_pendiente">Pendiente por cobrar</string>
+    <string name="reportes_total_ventas">Ventas generadas</string>
+    <string name="reportes_total_inversion">Inversion en pedidos</string>
+    <string name="reportes_total_ganancia">Ganancia proyectada</string>
+    <string name="reportes_lista_pedidos">Resumen de pedidos</string>
+
+    <!-- Item pedido -->
+    <string name="item_pedido_compra_format">Compra: RD$ %,.2f</string>
+    <string name="item_pedido_ganancia_format">Ganancia: RD$ %,.2f</string>
+    <string name="item_pedido_sin_fecha">Sin fecha</string>
+    <string name="item_pedido_entrega_format">Entrega: %1$s</string>
+
+    <!-- Acciones -->
+    <string name="accion_agregar_tarjeta">Tarjeta</string>
+    <string name="tarjeta_limite_format">Limite: RD$ %1$,.2f</string>
+    <string name="tarjeta_deuda_format">Deuda: RD$ %1$,.2f</string>
+    <string name="tarjeta_disponible_format">Disponible: RD$ %1$,.2f</string>
+    <string name="tarjeta_corte_format">Corte: %1$d</string>
+    <string name="tarjeta_vence_format">Vence: %1$d</string>
+    <string name="clientes_filter_all">Todos</string>
+    <string name="clientes_filter_phone">Con telefono</string>
+    <string name="clientes_filter_email">Con email</string>
+    <string name="accion_eliminar">Eliminar</string>
+    <string name="accion_cancelar">Cancelar</string>
+    <string name="dialog_delete_cliente_title">Eliminar cliente</string>
+    <string name="dialog_delete_cliente_message">Se eliminara el cliente %1$s y sus pedidos asociados. Deseas continuar?</string>
+    <string name="clientes_ver_pedidos">Ver pedidos</string>
+    <string name="dialog_delete_tarjeta_title">Eliminar tarjeta</string>
+    <string name="dialog_delete_tarjeta_message">Se eliminara la tarjeta seleccionada y su historial de movimientos.</string>
+    <string name="dialog_delete_pedido_title">Eliminar pedido</string>
+    <string name="dialog_delete_pedido_message">Se eliminara este pedido de forma definitiva.</string>
+    <string name="snackbar_pedido_eliminado">Pedido eliminado</string>
+    <string name="toast_cliente_eliminado">Cliente eliminado</string>
+    <string name="error_tarjeta_saldo_insuficiente">Saldo insuficiente en la tarjeta seleccionada.</string>
+    <string name="error_tarjeta_no_disponible">La tarjeta seleccionada no esta disponible.</string>
+    <string name="pedido_actualizado">Pedido actualizado</string>
+    <string name="pedido_guardado">Pedido guardado</string>
+    <string name="error_guardar_pedido">Error al guardar el pedido</string>
+    <string name="toast_tarjeta_eliminada">Tarjeta eliminada</string>
+
+    <!-- Pagos de tarjeta -->
+    <string name="dialog_pago_tarjeta_title">Pagar tarjeta</string>
+    <string name="dialog_pago_tarjeta_hint">Monto a pagar</string>
+    <string name="dialog_pago_tarjeta_button">Registrar pago</string>
+    <string name="dialog_pago_tarjeta_error">Monto invalido</string>
+    <string name="toast_tarjeta_pagada">Pago registrado</string>
+
+    <!-- Indicaciones -->
+    <string name="hint_swipe_pedido">Swipe derecha: entregar / Swipe izquierda: eliminar</string>
+    <string name="hint_swipe_tarjeta">Mantener para opciones (pagar o eliminar)</string>
+    <string name="menu_toggle_theme">Forzar modo oscuro</string>
 </resources>
