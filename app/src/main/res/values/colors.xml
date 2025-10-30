@@ -15,4 +15,19 @@
     <color name="background_light">#FAFAFA</color>
     <color name="background_card">#FFFFFF</color>
     <color name="ic_launcher_background">#AC0903</color>
+
+    <!-- Dashboard palette -->
+    <color name="dashboard_background">#F3F5FF</color>
+    <color name="dashboard_header_start">#4F7BF8</color>
+    <color name="dashboard_header_end">#6C4FF7</color>
+    <color name="dashboard_header_text">#F5F8FF</color>
+    <color name="dashboard_card_primary">#FFFFFF</color>
+    <color name="dashboard_card_secondary">#E6EBFF</color>
+    <color name="dashboard_card_orders">#4F7BF8</color>
+    <color name="dashboard_icon_tint">#4256C2</color>
+    <color name="dashboard_text_muted">#6E7191</color>
+    <color name="dashboard_chip_text">#FFFFFF</color>
+    <color name="dashboard_chip_icon">#FFFFFF</color>
+    <color name="dashboard_accent_positive">#2E7D32</color>
+    <color name="dashboard_accent_negative">#C62828</color>
 </resources>
